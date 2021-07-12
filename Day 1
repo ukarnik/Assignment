@@ -1,0 +1,26 @@
+<html>
+BEEE<input id=t1 /><br>
+ED<input id=t2 /><br>
+Chemistry<input id=t3 /><br>
+English<input id=t4 /><br>
+Maths<input id=t5 /><br>
+    
+    <input type=button value=Percentile onclick="xyz()"/> <br>
+    <output id=out1 />
+
+    <script>
+        function xyz()
+        {
+            a=parseInt(t1.value);
+            b=parseInt(t2.value);
+            c=parseInt(t3.value);
+            d=parseInt(t4.value);
+            e=parseInt(t5.value);
+            
+            f=(a+b+c+d+e)/5;
+
+            out1.value='Percentile:'+f
+        }
+        </script>
+  
+</html>
