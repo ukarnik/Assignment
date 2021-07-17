@@ -1,0 +1,54 @@
+<a href=home.html > Home </a> |
+<a href=about.html > About </a> |
+<a href=register.html > Register </a> |
+<a href=contact.html > Contact </a> |
+<a href=login.html > Login </a> |
+<a href=show.html > Show </a> 
+
+<center>
+<br><b><u> Registration form </u>
+<br><br>
+<form action=contact.html onsubmit="return show()" >
+<table border=0 >
+<tr> <th> Full name : <td> <input required id=i1 pattern="[a-zA-Z ]{2,15}">
+<tr> <th> User Id : <td><input required  id=i2 pattern="[0-9]{3}" >
+<tr> <th> Password : <td> <input required type=password id=i3 >
+<tr> <th> Email Id : <td> <input required type="email" id=i4>
+<tr> <th> Contact : <td> <input required id=i5 type=number pattern="[0-9]{10}">
+<tr> <th> Date of Birth : <td> <input required type=date id=i6 pattern="[0-9]">
+<tr> <th> Address : <td> <input required id=i7 >
+<tr> <th> City <td> <input  required  id=i8>
+<tr> <th> State <td> <input  required  id=i9>
+<tr> <th> Country : <td> <select id=i10 > <option> India </option><option> Dubai </option><option> Bhutan </option> </select>
+<tr> <td>  <td> <input required type=submit value=Register onclick=show() pattern="[a-zA-Z ]">
+</table>
+<p id=p1 ></p>
+</form>
+<script>
+
+function show()
+{
+a=i1.value;
+b=i2.value;
+c=i3.value;
+d=i4.value;
+e=i5.value;
+f=i6.value;
+g=i7.value;
+h=i8.value;
+i=i9.value;
+j=i10.value;
+out="<table border=10>"
+out+="<tr><th>Full name <td>"+a
+out+="<tr><th>User Id <td>"+b
+out+="<tr><th>Password <td>"+c
+out+="<tr><th>Email ID <td>"+d
+out+="<tr><th>Contact no <td>"+e
+out+="<tr><th>Date of Birth <td>"+f
+out+="<tr><th>Address <td>"+g
+out+="<tr><th>City <td>"+h
+out+="<tr><th>State <td>"+i
+out+="<tr><th>Country <td>"+j
+p1.innerHTML=out
+}
+</script>
