@@ -1,0 +1,16 @@
+<body>
+<!--audio and video tags-->
+  <table>
+    <tr>
+      <td><audio controls>
+                    <source src="horse.ogv">Your browser does not support the audio element.
+            </audio> 
+      </td> 
+    </tr>
+    <tr>
+       <td>
+                 <video src="movie.mp4" controls></video>
+       </td>
+     </tr>
+  </table>
+</body>
